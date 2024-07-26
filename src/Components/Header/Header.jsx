@@ -1,52 +1,47 @@
 // import React from 'react';
 import { VacioLados } from '../VacioLados/VacioLados'
 import './Header.css'
+import { Headerredes } from './Headerredes/Headerredes'
+import logoDribbble from '/dribbble.png'
+import logoBehance from '/behance.png'
+import logoInstagram from '/instagram.png'
+// import logo
 
 const Header = () => {
+
+    let redes = [
+        {
+            "nombre": "Dribbble",
+            "logo": "/dribbble.png",
+        },
+        {
+            "nombre": "Behance",
+            "logo": "/behance.png",
+        },
+        {
+            "nombre": "Instagram",
+            "logo": "/instagram.png",
+        }
+    ]
+
   return (
-    <div>
+    <section>
         <VacioLados/>
-        <section class="header-info">
-            <div class="header-marca">
-                <a href="" class="header-marca-letra">Tomás Camacho</a>
-            </div>
         
-            <div class="header-redes">
-                <div class="redes">
-                    <div>
-                        <a href=""><img src="images/dribbble.png" alt="" class="icon-redes"></a>
-                    </div>
-                    
-                    <div>
-                        <a href="" class="nombre-redes">Dribbble</a>
-                    </div>
-                    
-                </div>
-                <div class="redes">
-                    <div>
-                        <a href=""><img src="images/behance.png" alt="" class="icon icon-redes icon-behance"></a>
-                    </div>
-                    
-                    <div>
-                        <a href="" class="nombre-redes">Behance</a>
-                    </div>
-                </div>
-                <div class="redes">
-                    <div>
-                        <a href=""><img src="images/instagram.png" alt="" class="icon icon-redes icon-instagram"></a>
-                    </div>
-                    <div>
-                        <a href="" class="nombre-redes">Instagram</a>
-                    </div>
-                    
-                </div>
+        <div className="header-info">
+            <div className="header-marca">
+                <a href="" className="header-marca-letra">Tomás Camacho</a>
+            </div>
+            <div>
+                {redes.map(elemento=><Headerredes nombre={elemento.nombre} img={elemento.logo}/>)}
             </div>
             <div class="header-menu">
-              <a href=""><img src="images/menu.png" alt="" class="icon-menu"></a>
+              <a href=""><img src="/menu.png" alt="" class="icon-menu"/></a>
             </div>
-        </section>
+        </div>
+
         <VacioLados/>
-    </div>
+    </section>
   )
 }
 
