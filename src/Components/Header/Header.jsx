@@ -2,9 +2,6 @@
 import { VacioLados } from '../VacioLados/VacioLados'
 import './Header.css'
 import { Headerredes } from './Headerredes/Headerredes'
-import logoDribbble from '/dribbble.png'
-import logoBehance from '/behance.png'
-import logoInstagram from '/instagram.png'
 // import logo
 
 const Header = () => {

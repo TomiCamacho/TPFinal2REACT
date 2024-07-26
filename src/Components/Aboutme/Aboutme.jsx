@@ -5,7 +5,7 @@ import imgAboutme from '/aboutme.png'
 
 const Aboutme = () => {
   return (
-    <div>
+    <section>
         <VacioLados/>
         <div>
         <img src={imgAboutme} alt="" class="aboutme-info-img"/>
@@ -17,7 +17,7 @@ const Aboutme = () => {
             </div>
         </div>
         <VacioLados/>
-    </div>
+    </section>
   )
 }
 
