@@ -3,9 +3,9 @@ import './VacioLados.css'
 
 const VacioLados = () => {
   return (
-    <div>
-        <p>Vacio</p>
-    </div>
+    <Box width="5vw">
+        
+    </Box>
   )
 }
 

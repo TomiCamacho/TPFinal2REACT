@@ -13,7 +13,7 @@ import { Aboutme } from '../Aboutme/Aboutme'
 
 const Body = () => {
   return (
-    <div>
+    <Box m="0px" width="100vw">
       <Header/>
       <Hero/>
       <Empresas/>
@@ -23,7 +23,7 @@ const Body = () => {
       <Testimonios/>
       <Contacto/>
       <Footer/>
-    </div>
+    </Box>
   )
 }
 
