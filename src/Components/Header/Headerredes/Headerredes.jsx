@@ -12,11 +12,13 @@ const Headerredes = ({nombre,img}) => {
             border="1px solid #f0eded"
             margin="0vw 0.5vw">
                     <div>
-                        <a href=""><Image src={img} alt="" id="icon-redes"
+                        <a href="">
+                          <Image src={img} alt="" id="icon-redes"
                           width="31px"
                           position="relative"
                           top="0.6px"
-                          paddingRight="10px"/>
+                          paddingRight="10px"
+                          />
                           </a>
                     </div>
                     
@@ -28,7 +30,9 @@ const Headerredes = ({nombre,img}) => {
                               color="rgb(46, 45, 45)"
                               textDecoration="none"
                               mt="2.5px"
-                              textDecorationLine="none"
+                              _hover={{
+                            textDecoration:'none'
+                              }}
                         >{nombre}</Link>
                     </div>
                     

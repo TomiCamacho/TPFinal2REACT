@@ -1,7 +1,7 @@
 import { VacioLados } from '../VacioLados/VacioLados'
 import './Header.css'
 import { Headerredes } from './Headerredes/Headerredes'
-import { Box, Text, Button } from '@chakra-ui/react'
+import { Box, Text, Button, Link } from '@chakra-ui/react'
 
 const Header = () => {
 
@@ -41,13 +41,16 @@ const Header = () => {
             <Box id="header-marca"
                 padding="0 0 0 3vw"
                 alignSelf="center">
-                <Text href="" id="header-marca-letra"
+                <Link href="" id="header-marca-letra"
                 fontFamily="'Great Vibes', cursive"
                 fontWeight="600"
                 fontSize="27px"
                 textDecoration="none"
                 color="black"
-                >Tomás Camacho</Text>
+                _hover={{
+                    textDecoration:'none'
+                }}
+                >Tomás Camacho</Link>
             </Box>
             <Box id='header-redes'
                 alignItems="center"
