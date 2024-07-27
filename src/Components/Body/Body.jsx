@@ -9,11 +9,17 @@ import { Testimonios } from '../Testimonios/Testimonios'
 import { Contacto } from '../Contacto/Contacto'
 import { Footer } from '../Footer/Footer'
 import { Aboutme } from '../Aboutme/Aboutme'
+import { Box } from '@chakra-ui/react'
+
+
 
 
 const Body = () => {
   return (
-    <Box m="0px" width="100vw">
+    <Box
+    margin="0px"
+    width="100vw"
+    >
       <Header/>
       <Hero/>
       <Empresas/>

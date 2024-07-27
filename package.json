@@ -13,6 +13,8 @@
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
+    "@fontsource/great-vibes": "^5.0.21",
+    "@fontsource/inter": "^5.0.19",
     "formik": "^2.4.6",
     "framer-motion": "^11.3.18",
     "prop-types": "^15.8.1",
