@@ -7,7 +7,7 @@ import { Box } from '@chakra-ui/react'
 const VacioLados = () => {
   return (
     <Box 
-    width="5vw"
+    width="5%"
     >
         
     </Box>

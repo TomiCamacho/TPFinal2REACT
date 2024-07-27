@@ -18,7 +18,7 @@ const Body = () => {
   return (
     <Box
     margin="0px"
-    width="100vw"
+    width="100%"
     >
       <Header/>
       <Hero/>

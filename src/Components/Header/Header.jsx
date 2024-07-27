@@ -27,7 +27,7 @@ const Header = () => {
     height="15vh"
     alignItems="center"
     borderBottom="2px solid #d3d3d3"
-    width="100vw"
+    width="100%"
     >
         <VacioLados/>
         

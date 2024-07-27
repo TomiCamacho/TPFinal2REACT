@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <Flex
       borderBottom="2px solid #d3d3d3"
-      width="100vw"
+      width="100%"
       height="75vh"
     >
       <VacioLados/>

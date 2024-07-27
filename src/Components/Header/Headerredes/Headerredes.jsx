@@ -1,5 +1,4 @@
-// import React from 'react';
-import './Headerredes.css'
+
 import {Flex, Image, Link} from '@chakra-ui/react'
 
 const Headerredes = ({nombre,img}) => {
