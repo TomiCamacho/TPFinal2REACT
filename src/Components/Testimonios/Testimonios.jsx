@@ -4,7 +4,6 @@ import { Box, Text
    from '@chakra-ui/react'
 import { VacioLados } from '../VacioLados/VacioLados'
 import { TestimoniosBloques } from './TestimoniosBloques/TestimoniosBloques'
-import { motion } from 'framer-motion'
 
 const Testimonios = () => {
 
@@ -61,7 +60,7 @@ const Testimonios = () => {
     <Box
     display="flex"
     width="100%"
-    height="230vh"
+    height="240vh"
     borderBottom="2px solid #d3d3d3"
     >
         <VacioLados/>
