@@ -1,6 +1,5 @@
 // import React from 'react';
 import { VacioLados } from '../VacioLados/VacioLados'
-import './Footer.css'
 import facebookLogo from '/facebook.png'
 import instagramBlack from '/instagramblack.png'
 import behanceBlack from '/behanceblack.png'

@@ -1,7 +1,6 @@
 // import React from 'react';
 import { useState } from 'react'
 import { VacioLados } from '../VacioLados/VacioLados'
-import './Contacto.css'
 
 const Contacto = () => {
 

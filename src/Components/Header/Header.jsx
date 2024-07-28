@@ -1,5 +1,4 @@
 import { VacioLados } from '../VacioLados/VacioLados'
-import './Header.css'
 import { Headerredes } from './Headerredes/Headerredes'
 import { Box, Text, Button, Link } from '@chakra-ui/react'
 

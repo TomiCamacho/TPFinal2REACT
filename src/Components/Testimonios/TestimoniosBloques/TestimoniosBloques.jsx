@@ -1,5 +1,4 @@
-// import React from 'react';
-import './TestimoniosBloques.css'
+
 
 const TestimoniosBloques = ({title,msj,img,nombre,ocupacion}) => {
   return (

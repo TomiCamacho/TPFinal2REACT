@@ -1,5 +1,3 @@
-// import React from 'react';
-import './VacioLados.css'
 import { Box } from '@chakra-ui/react'
 
 

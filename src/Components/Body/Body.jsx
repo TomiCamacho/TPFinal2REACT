@@ -1,5 +1,3 @@
-// import React from 'react';
-import './Body.css'
 import { Header } from '../Header/Header'
 import { Hero } from '../Hero/Hero'
 import { Empresas } from '../Empresas/Empresas'

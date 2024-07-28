@@ -1,6 +1,5 @@
-// import React from 'react';
+
 import { VacioLados } from '../VacioLados/VacioLados'
-import './Testimonios.css'
 import { TestimoniosBloques } from './TestimoniosBloques/TestimoniosBloques'
 
 const Testimonios = () => {
