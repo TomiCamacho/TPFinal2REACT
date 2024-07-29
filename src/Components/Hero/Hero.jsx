@@ -23,7 +23,7 @@ const Hero = () => {
       >
         <Box id="hero-info-texto"
           pl='40px'
-          mt='40px'
+          mt='90px'
         >
           <Text id="hero-info-texto-title"
             fontFamily="Inter, sans-serif"
@@ -31,6 +31,7 @@ const Hero = () => {
             color="rgb(46, 45, 45)"
             marginBottom="30px"
             fontWeight="700"
+            lineHeight="1.3"
           >Desarrollador Web FULL STACK <br/> Tomás Camacho</Text>
           <Button id="button hero-info-texto-button"
           // padding="30px 32px"

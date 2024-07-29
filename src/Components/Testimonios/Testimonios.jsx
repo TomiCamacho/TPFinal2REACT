@@ -57,10 +57,10 @@ const Testimonios = () => {
   // }, []);
 
   return (
-    <Box
+    <Box id='testimonios'
     display="flex"
     width="100%"
-    height="240vh"
+    height="230vh"
     borderBottom="2px solid #d3d3d3"
     >
         <VacioLados/>
@@ -70,7 +70,7 @@ const Testimonios = () => {
         borderRight="1px solid #dbdbdb"
         fontFamily="Inter, Sans-serif"
         color="rgb(46, 45, 45)"
-        p="80px"
+        p="40px 80px"
         >
                 <Box id="testimonios-texto"
                   mt="40px"
