@@ -6,7 +6,12 @@ import imgPortfolio from '/Imagen Portfolio.png'
 
 const Hero = () => {
 
-  
+  const handleButtonClick = () => {
+    const aboutSection = document.getElementById('contacto');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <Flex
@@ -33,8 +38,7 @@ const Hero = () => {
             fontWeight="700"
             lineHeight="1.3"
           >Desarrollador Web FULL STACK <br/> Tomás Camacho</Text>
-          <Button id="button hero-info-texto-button"
-          // padding="30px 32px"
+          {/* // padding="30px 32px"
           // backgroundColor="#FEC737"
           // color="rgb(46, 45, 45)"
           // boxShadow="5px 5px 0px 0px"
@@ -46,35 +50,36 @@ const Hero = () => {
           // position="relative"
           // textDecoration="none"
           // _hover={{
-          //   backgroundColor: 'rgb(44, 43, 43)',
-          //   color: '#FEC737',
-          //   // boxShadow: 'rgb(31, 30, 30)',
-          //   boxShadow:'0px 0px 0px 0px',
-          //   cursor: 'pointer',
-          //   transform: 'translateX(5px)',
-          //   transition: '0.5s',
-          // }}
-          padding="30px 32px"
-          backgroundColor="#FEC737"
-          color="rgb(46, 45, 45)"
-          boxShadow="5px 5px 0px 0px"
-          fontFamily="Inter, sans-serif"
-          fontSize="16px"
-          fontWeight="600"
-          borderWidth="0px"
-          borderRadius="2px"
-          position="relative"
-          textDecoration="none"
-          as={motion.button}
-          whileHover={{
             backgroundColor: 'rgb(44, 43, 43)',
             color: '#FEC737',
-            boxShadow: '0 0 0 0',
+            boxShadow: 'rgb(31, 30, 30)',
+            boxShadow:'0px 0px 0px 0px',
             cursor: 'pointer',
             transform: 'translateX(5px)',
-            transition: { duration: 0.2 }, // Duración de la animación en segundos
-          }}
-          >Contáctame</Button>
+            transition: '0.5s',
+          }} */}
+            <Button
+              as={motion.button}
+              padding="30px 32px"
+              backgroundColor="#FEC737"
+              color="rgb(46, 45, 45)"
+              boxShadow="5px 5px 0px 0px"
+              fontFamily="Inter, sans-serif"
+              fontSize="16px"
+              fontWeight="600"
+              borderWidth="0px"
+              borderRadius="2px"
+              position="relative"
+              onClick={handleButtonClick}
+              whileHover={{
+              backgroundColor: 'rgb(44, 43, 43)',
+              color: '#FEC737',
+              boxShadow: '0 0 0 0',
+              cursor: 'pointer',
+              transform: 'translateX(5px)',
+              transition: { duration: 0.2 }, // Duración de la animación en segundos
+            }}
+            >Contáctame</Button>
         </Box>
         <Flex id="hero-info-img"
           borderLeft="1px solid #dbdbdb"
