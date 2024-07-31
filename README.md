@@ -4,9 +4,9 @@
 
 🔹 Ahora utilizamos ⚛️ <strong>REACT</strong> y distintas bibliotecas para mejorar lo que habíamos hecho antes. <br>
 
-🔹 El diseño con el que trabajé fue: [Diseño en Dribbble]https://dribbble.com/shots/20825675-Portfolio-Personal-Website-Portfolio <br>
+🔹 El diseño con el que trabajé fue: [Diseño en Dribbble](https://dribbble.com/shots/20825675-Portfolio-Personal-Website-Portfolio) <br>
 
-🔹 <strong>Deploy en Vercel: [Mi página web]https://tp-final2.vercel.app/</strong>
+🔹 <strong>Deploy en Vercel: [Mi página web](https://tp-final2.vercel.app/)</strong>
 
 <br>
 
