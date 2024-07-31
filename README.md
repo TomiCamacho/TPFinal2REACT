@@ -59,6 +59,16 @@
 
 <br>
 
+## Correcciones al último trabajo
+
+✔️ Subrayado con espaciado corregido en los links 'Ver Proyecto' <br>
+
+✔️ Se separaron los placeholders respecto al borde de los input (venía por defecto en las etiquetas propias de Chakra) <br>
+
+✔️ Se corrigieron algunos paddings superiores e inferiores en algunas secciones a la hora de variar el ancho de la pantalla. <br>
+
+<br>
+
 ## Responsive
 
 Para que la página sea responsiva utilicé <strong>Chakra</strong>. Antes, configuré los breakpoints que trae predefinidos y los cambié por los del primer Trabajo Práctico:
