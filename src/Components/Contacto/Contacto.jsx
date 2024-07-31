@@ -127,7 +127,7 @@ const Contacto = () => {
                       fontSize="20px"
                       fontWeight="300"
                       mb="40px"
-                      w={['252px','252px','336px']}
+                      w={['252px','252px','336px','410px']}
                     >Transformaré tu idea en un increíble diseño.</Text>
                 </Box>
                 <Box id="contacto-formulario-contenedor"
