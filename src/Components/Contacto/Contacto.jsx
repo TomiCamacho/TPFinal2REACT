@@ -7,7 +7,7 @@ import { Box, Text, Flex, Button, FormControl, FormLabel, Input, Textarea, Modal
   ModalFooter,
   ModalBody,
   ModalCloseButton,
-  useDisclosure } from '@chakra-ui/react'
+  useDisclosure, } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import { Formik, Form, ErrorMessage, Field , useFormik} from 'formik'
 import * as Yup from 'yup'
