@@ -36,7 +36,7 @@ const Proyectos = () => {
   return (
     <Box id="proyectos"
     display="flex"
-    height="1400px"
+    height={['2900px','2900px','2920px','1800px','1800px', "1400px"]}
     width="100%"
     alignItems="center"
     borderBottom="2px solid #d3d3d3"
@@ -53,7 +53,7 @@ const Proyectos = () => {
           flexDirection="column"
           justifyContent="center"
           alignItems="center"
-          pt="70px"
+          pt={['0px','0px','0px','0px','0px', "70px"]}
         >
             <Text id="proyectos-info-seccion"
               padding="12px 20px"
@@ -79,7 +79,7 @@ const Proyectos = () => {
               flexWrap="wrap"
               width="90vw"
               paddingTop="3vh"
-              height="75%"
+              height={["80%","80%","85%","75%"]}
               justifyContent="center"
             >
               {proyectos.map(elemento=><ProyectosBloque p={elemento.p} img={elemento.img}/>)}

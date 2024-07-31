@@ -12,11 +12,13 @@ import { Body } from './Components/Body/Body.jsx'
 // import { Contacto } from './Components/Contacto/Contacto.jsx'
 // import { Footer } from './Components/Footer/Footer.jsx'
 import { ChakraProvider } from '@chakra-ui/react'
+import theme from './theme.js';
 // import theme from './theme.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ChakraProvider 
+    theme={theme}
     // theme={theme}
     >
       <Body/>

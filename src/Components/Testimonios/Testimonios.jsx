@@ -60,7 +60,7 @@ const Testimonios = () => {
     <Box id='testimonios'
     display="flex"
     width="100%"
-    height="230vh"
+    height={["500vh","500vh","380vh","320vh","230vh","225vh","210vh","160vh"]}
     borderBottom="2px solid #d3d3d3"
     >
         <VacioLados/>
@@ -70,7 +70,7 @@ const Testimonios = () => {
         borderRight="1px solid #dbdbdb"
         fontFamily="Inter, Sans-serif"
         color="rgb(46, 45, 45)"
-        p="40px 80px"
+        p={["40px 20px","40px 20px","40px 30px","40px 80px","40px 50px","40px 50px","40px 80px",]}
         >
                 <Box id="testimonios-texto"
                   mt="40px"

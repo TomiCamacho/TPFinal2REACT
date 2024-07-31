@@ -34,7 +34,7 @@ const Servicios = () => {
     <Box id="servicios"
     display="flex"
     borderBottom="2px solid #d3d3d3"
-    height="100vh"
+    height={["210vh","200vh","220vh","240vh","160vh","110vh"]}
     width="100%"
     >
         <VacioLados/>
@@ -47,15 +47,15 @@ const Servicios = () => {
           justifyContent="center"
           fontFamily="Inter, sans-serif"
           color="rgb(46, 45, 45)"
-          alignItems="center"
+          alignItems={["center","center","center","center","center","center"]}
         >
         <Box id="servicios-info-info"
         width="100%"
         height="90%"
-        marginTop="5px"
+        marginTop={["0px","0px","0px","25px","65px","5px"]}
         display="flex"
         flexDirection="column"
-        justifyContent="center"
+        justifyContent={["center","center","center","normal","normal","center"]}
         alignItems="center"
         >
             <Box id="seccion servicios-info-info-seccion"
@@ -71,7 +71,7 @@ const Servicios = () => {
             ><p>Servicios</p></Box>
             <Text id="servicios-info-info-texto"
               textAlign="center"
-              fontSize="40px"
+              fontSize={["25px","25px","35px","40px"]}
               color="rgb(46, 45, 45)"
               marginTop="25px"
               fontWeight="700"
@@ -84,15 +84,16 @@ const Servicios = () => {
               display="flex"
               flexDirection="row"
               justifyContent="space-around"
-              height="65%"
+              flexWrap={['wrap','wrap','wrap','wrap','wrap','nowrap']}
+              height={["90%","90%","90%","90%",'80%',"65%"]}
               mt="30px"
-              padding="0px 20px"
+              padding={["0px 0px","0px 0px","0px 20px"]}
               width="80%"
               alignItems="center"
             >
                 <Button id="servicios-bloques"
                   padding="5px 0vw"
-                //   display="flex"
+                  // display={["flex"]}
                   flexDirection="column"
                   border="1px solid #d3d3d3"
                   borderRadius="8px"
@@ -170,7 +171,7 @@ const Servicios = () => {
                 //   }}
                 >
                     <Text id="servicios-bloques-nombre nombre-gestion"
-                      fontSize="25px"
+                      fontSize={["25px","20px","25px"]}
                       color="rgb(46, 45, 45)"
                       fontWeight="600"
                       fontFamily="Inter, sans-serif"
@@ -178,7 +179,7 @@ const Servicios = () => {
                       mb="30px"
                     mt="52px"
                     >Gestión de Datos</Text>
-                    <Image src={servicioGestionDeDatos} alt="" id="servicios-bloques-logo logo-gestion" width="150px" 
+                    <Image src={servicioGestionDeDatos} alt="" id="servicios-bloques-logo logo-gestion" width={['','', "150px"]} 
                     // padding="30px 0vw" 
                     // paddingBottom="0px"
                     // bg='red'

@@ -10,7 +10,7 @@ const Aboutme = () => {
     <Box id='aboutme'
     display="flex"
     borderBottom="2px solid #d3d3d3"
-    height="100vh"
+    height={["105vh","105vh","90vh","90vh","100vh"]}
     width="100%">
         <VacioLados/>
         <Box id='aboutme-info'
@@ -21,7 +21,10 @@ const Aboutme = () => {
           alignItems="center"
           justifyContent="space-around"
           >
-        <Image src={imgAboutme} alt="" id="aboutme-info-img" ml="5%" mt="15%" mb="40"/>
+        <Image src={imgAboutme} alt="" id="aboutme-info-img" ml="5%" mt="15%" mb="40"
+          w={['550px','550px','550px','550px','300px','550px']}
+          display={['none','none','none','none','block']}
+        />
             <Box id="aboutme-info-texto"
               marginLeft="20px"
               marginTop="10px"
@@ -42,7 +45,7 @@ const Aboutme = () => {
                 >
                   <p>Sobre mí</p></Box>
               <Text id="aboutme-info-texto-h3"
-                fontSize="50px"
+                fontSize={['50px','35px','45px',"50px"]}
                 marginTop="25px"
                 marginBottom="29px"
                 color="rgb(46, 45, 45)"
@@ -54,6 +57,7 @@ const Aboutme = () => {
                 lineHeight="1.5"
                 color="#5c5c5c"
                 mb="35px"
+                w={['95%']}
               >Soy un apasionado Desarrollador Web Full Stack con experiencia en la creación de interfaces atractivas y funcionales. Mi enfoque se centra en el diseño limpio, la usabilidad y la optimización para una experiencia de usuario excepcional. Me encanta explorar nuevas tecnologías y estar al día con las últimas tendencias en desarrollo web.</Text>
               <a href={cv} download>
               <Button id="aboutme-info-texto-button"

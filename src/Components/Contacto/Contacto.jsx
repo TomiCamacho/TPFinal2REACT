@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { VacioLados } from '../VacioLados/VacioLados'
-import { Box, Text, Button, FormControl, FormLabel, Input, Textarea, Modal,
+import { Box, Text, Flex, Button, FormControl, FormLabel, Input, Textarea, Modal,
   ModalOverlay,
   ModalContent,
   ModalHeader,
@@ -90,9 +90,9 @@ const Contacto = () => {
   return (
     <Box id='contacto'
       w="100%"
-      h="1000px"
+      h={['1200px','1200px','1090px']}
       borderBottom="2px solid #d3d3d3"
-      display="flex"
+      display='flex'
     >
       <VacioLados/>
       <Box id="contacto-info"
@@ -105,7 +105,7 @@ const Contacto = () => {
         display="flex"
         flexDirection="column"
         alignItems="center"    
-        pt="75px"
+        pt={["45px","45px","45px","75px"]}
       >
                 <Box id="contacto-info-texto"
                   pt="4vh"
@@ -115,21 +115,26 @@ const Contacto = () => {
                   alignItems="center"    
                 >
                     <Text id="contacto-titulo"
-                      fontSize="40px"
+                      fontSize={["36px","36px","36px","40px"]}
                       mb="20px"  
-                      fontWeight="700"  
+                      fontWeight="700"
+                      // bg='yellow'
+                      w={['85%','85%','85%','85%','100%']}
+                      textAlign='center'
                     >¿Estás interesado en trabajar conmigo?</Text>
+        
                     <Text id="contacto-p"
                       fontSize="20px"
                       fontWeight="300"
                       mb="40px"
-                    >Transformaré tu idea en un increíble diseño</Text>
+                      w={['252px','252px','336px']}
+                    >Transformaré tu idea en un increíble diseño.</Text>
                 </Box>
                 <Box id="contacto-formulario-contenedor"
                       border= "2px solid #d3d3d3"
                       borderRadius= "8px"
-                      p= "0px 110px"
-                      w="550px"
+                      p= {["0px 20px","0px 20px","0px 35px","0px 110px"]}
+                      w={["250px","250px","380px","550px"]}
                       h="680px"
                       alignItems="center"
                       display="flex"
@@ -158,7 +163,8 @@ const Contacto = () => {
                     tel:Yup
                       .number()
                       .typeError('Debes ingresar un número de teléfono válido.')
-                      .required('Este campo es obligatorio.'),
+                      .required('Este campo es obligatorio.')
+                      .min(100000,'Debes ingresar un número de teléfono válido.'),
                     msj:Yup
                       .string()
                   })}
@@ -186,6 +192,7 @@ const Contacto = () => {
                         // justifyContent='space-around'
                         // bg='yellow'
                         h='590px'
+                        // alignItems={['center','normal','normal']}
                       >
                         <Box id='formulario-campo-nombre'
                         // mb='35px'
@@ -204,7 +211,7 @@ const Contacto = () => {
                             <Input {...field} type="text" placeholder="Ingrese su nombre*" name='nombre' value={values.nombre} onChange={handleChange} required id="formulario-input"
                             // mb="35px"
                             border="2px solid #d3d3d3"
-                            w="300px"
+                            w={['200px',"200px","300px"]}
                             h="40px"
                             borderRadius="5px"
                             // focusBorderColor="gray.400"
@@ -221,7 +228,7 @@ const Contacto = () => {
                         // pb={errors.email?'11px':'35px'}
                         // mt={errors.email?'35px':'59px'}
                         // h={errors.email?'100px':'76px'}
-                        h='115px'
+                        h={['139px','139px','115px']}
                         >
                           <FormLabel id="formulario-label" htmlFor='email'
                             mb="12px"
@@ -231,8 +238,8 @@ const Contacto = () => {
                             <Input {...field} type="email" placeholder="Ingrese su correo electrónico*" name='email' value={values.email} onChange={handleChange} required id="formulario-input"
                             // mb="35px"
                             border="2px solid #d3d3d3"
-                            w="300px"
-                            h="40px"
+                            w={["200px","200px","300px"]}
+                            h='40px'
                             borderRadius="5px"
                             // focusBorderColor="gray.400"
                             maxLength="100"
@@ -260,7 +267,7 @@ const Contacto = () => {
                             <Input {...field} type="tel" placeholder="Ingrese su número de teléfono*" name='tel' value={values.tel} onChange={handleChange} required id="formulario-input"
                             // mb="35px"
                             border="2px solid #d3d3d3"
-                            w="300px"
+                            w={["200px","200px","300px"]}
                             h="40px"
                             borderRadius="5px"
                             // focusBorderColor="gray.400"
@@ -282,6 +289,7 @@ const Contacto = () => {
                           <Textarea rows="4" cols="50"  name='msj' value={values.msj} onChange={handleChange} id="formulario-input formulario-mensaje"
                             // mb="35px"
                             h="100px"
+                            // w={['230px','230px','320px']}
                             resize="none"
                             border="2px solid #d3d3d3"   
                             focusBorderColor="gray.400"

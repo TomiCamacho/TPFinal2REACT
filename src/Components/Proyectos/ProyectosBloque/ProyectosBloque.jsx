@@ -11,8 +11,8 @@ const ProyectosBloque = ({img,p}) => {
         <Link href="" id="proyectos-bloque-img-a"
         cursor="pointer"
           ><Image src={img} alt="" id="proyectos-img"
-          width="300px"
-          height="300px"
+          width={['250px','250px','265px','280px',"300px"]}
+          height={['250px','250px','265px','280px',"300px"]}
           borderRadius="5px"
           as={motion.img}
           whileHover={{
@@ -24,7 +24,7 @@ const ProyectosBloque = ({img,p}) => {
         <Text id="proyectos-bloque-p"
           fontSize="20px"
           fontWeight="600"
-          maxWidth="310px"
+          maxWidth={["257px","257px","275px","278px"]}
           mt="19px"
         >{p}</Text>
         <Box

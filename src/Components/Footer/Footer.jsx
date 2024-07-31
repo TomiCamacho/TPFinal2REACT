@@ -13,7 +13,8 @@ const Footer = () => {
     <Box id='footer'
         h="25vh"
         w="100%"
-        display="flex"
+        display='flex'
+
     >
         <VacioLados/>
         <Box id="footer-info"
@@ -28,7 +29,7 @@ const Footer = () => {
         >
                 <Box id="footer-linea1"
                   display="flex"
-                  justifyContent="space-around"
+                  justifyContent={['center','center','center',"space-around"]}
                   padding="2vh 3vw"
                   fontSize="21px"
                   fontWeight="500"
@@ -36,8 +37,11 @@ const Footer = () => {
                 >
                     <Box id="footer-linea1-redes"
                       display="flex"
+                      
                     >
-                        <Text id="footer-linea1-redes-p">Mis redes:</Text>
+                        <Text id="footer-linea1-redes-p"
+                          display={['none','none','none','none','none','block']}
+                        >Mis redes:</Text>
                         <Link href=""><Image src={facebookLogo} alt=""  id="footer-redes-icon"
                           w="30px"
                           m="0px 0.7vw"
@@ -66,7 +70,9 @@ const Footer = () => {
                             w="30px" 
                             mr="0.7vw"
                         /></Link>
-                        <Text id="footer-linea1-redes-tel">+54 2615993109</Text>
+                        <Text id="footer-linea1-redes-tel"
+                          display={['none','none','none','none','block']}
+                        >+54 2615993109</Text>
                     </Box>
                     <Box id="footer-linea1-correo"
                       display="flex"
@@ -75,7 +81,9 @@ const Footer = () => {
                         w="30px"
                         mr="0.7vw"
                         /></Link>
-                        <Text id="footer-linea1-redes-email">tomycamacho3004@gmail.com</Text>
+                        <Text id="footer-linea1-redes-email"
+                          display={['none','none','none','block']}
+                        >tomycamacho3004@gmail.com</Text>
                     </Box>
                 </Box>
                 <Box id="footer-linea2"
@@ -85,7 +93,10 @@ const Footer = () => {
                   h="100%"
                   margin="1vh 0px"
                 >
-                    <Text id="footer-linea2-p">Copyright 2024 Tomás Camacho   |   Todos los derechos reservados.</Text>
+                    <Text id="footer-linea2-p"
+                      fontSize={['15px','15px','18px', '20px']}
+                      textAlign='center'
+                    >Copyright 2024 Tomás Camacho   |   Todos los derechos reservados.</Text>
                 </Box>
             </Box>
         <VacioLados/>

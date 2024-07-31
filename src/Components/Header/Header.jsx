@@ -8,6 +8,7 @@ import facebookLogo from '/facebook.png'
 import instagramBlack from '/instagramblack.png'
 import behanceBlack from '/behanceblack.png'
 import dribbbleBlack from '/dribbbleblack.png'
+import { useTheme } from '@chakra-ui/react';
 // import {
 //     Menu,
 //     MenuButton,
@@ -42,11 +43,18 @@ const Header = () => {
           setIsOpen(!isOpen);
         };
 
+    // const theme = useTheme();
+
+        // Accede a los breakpoints
+    // const isMobile = window.innerWidth < parseInt(theme.breakpoints.md, 10);
+      
+
   return (
     <Box id='header'
-    display="flex"
+    // display="flex"
+    display='flex'
     margin="0"
-    height="15vh"
+    height={['8vh','8vh',"15vh"]}
     alignItems="center"
     borderBottom="2px solid #d3d3d3"
     width="100%"
@@ -65,7 +73,7 @@ const Header = () => {
                     // opacity="0.5"
                     position="fixed"
                     w="100%"
-                    h="1500px"
+                    h={['200%','200%','200%','200%',"1500px"]}
                     zIndex="998"
                     >
                 </Box>
@@ -75,12 +83,14 @@ const Header = () => {
         
         <Box id='header-info'
             display="flex"
-            justifyContent="space-between"
+            // bg='red'
+            justifyContent={['center','center','center','space-between']}
             width="90vw"
             height="100%"
             borderLeft="1px solid #dbdbdb"
             borderRight="1px solid #dbdbdb">
             <Box id="header-marca"
+                display={['none','none','none','block']}
                 padding="0 0 0 3vw"
                 alignSelf="center">
                 <Link href="" id="header-marca-letra"
@@ -96,7 +106,7 @@ const Header = () => {
             </Box>
             <Box id='header-redes'
                 alignItems="center"
-                display="flex"
+                display={['none','none','none','flex']}
             >
                 {redes.map(elemento=><Headerredes nombre={elemento.nombre} img={elemento.logo}/>)}
             </Box>
@@ -166,6 +176,7 @@ const Header = () => {
             alignSelf="center"
             p="0"
             colorScheme='white'
+            // bg='yellow'
             >
             <Image src={menuIMG}
                 w="35px"
@@ -180,8 +191,8 @@ const Header = () => {
                   position="fixed"
                   top="0"
                   right="0"
-                  height="100vh"
-                  width="400px"
+                  height={['100%','100%','100%','100%',"100vh"]}
+                  width={['100%','100%','100%', "400px"]}
                   bg="white"
                   display="flex"
                   flexDirection="column"

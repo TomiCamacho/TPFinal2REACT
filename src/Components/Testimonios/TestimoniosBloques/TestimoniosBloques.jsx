@@ -5,13 +5,13 @@ const TestimoniosBloques = ({title,msj,img,nombre,ocupacion}) => {
     <Box id="testimonios-carrusel-bloques"
       border="1px solid #d3d3d3"
       borderRadius="6px"
-      width="500px"
+      width={["240px","240px","350px","500px","400px","500px",]}
       padding="30px"
       mt="50px"
       
     >
         <Text id="carrusel-bloques-title"
-        fontSize="25px"
+        fontSize={["22px","22px","25px"]}
         fontWeight="700"
         >{title}</Text>
         <Text id="carrusel-bloques-msj"
