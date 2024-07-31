@@ -1,12 +1,12 @@
 # README: Trabajo Práctico Final Nº2 | UTN Argentina
 
-🔹 Este trabajo consistió en <strong>agregarle funcionalidad</strong> al primer trabajo (https://github.com/TomiCamacho/Trabajo-Final-1) que había sido creado con HTML y CSS puro. <br>
+🔹 Este trabajo consistió en <strong>agregarle funcionalidad</strong> al primer trabajo [TPF1](https://github.com/TomiCamacho/Trabajo-Final-1) que había sido creado con HTML y CSS puro. <br>
 
 🔹 Ahora utilizamos ⚛️ <strong>REACT</strong> y distintas bibliotecas para mejorar lo que habíamos hecho antes. <br>
 
-🔹 El diseño con el que trabajé fue: https://dribbble.com/shots/20825675-Portfolio-Personal-Website-Portfolio <br>
+🔹 El diseño con el que trabajé fue: [Diseño en Dribbble]https://dribbble.com/shots/20825675-Portfolio-Personal-Website-Portfolio <br>
 
-🔹 <strong>Deploy en Vercel: https://tp-final2.vercel.app/</strong>
+🔹 <strong>Deploy en Vercel: [Mi página web]https://tp-final2.vercel.app/</strong>
 
 <br>
 
